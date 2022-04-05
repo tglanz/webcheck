@@ -58,7 +58,7 @@ Get all requests in a specified time frame ```GET api/v1/requests/time-frame?fro
 - Better error handling
 - Async IO when contacting webcheck servers
 - Splitting requests for "RequestBegin" "RequestCompleted". Currently we cannot detect crashes since we only record upon completion
-- Relational storage was chosed for simplicity, perhaps different solutions are preferable
+- Relational storage was chosen for simplicity, perhaps different solutions are preferable
 - Backed can be greately improve design wise. The backend should support unknown workloads. Natural improvements
     1. Multiple instances behind a load balancer
     1. Insert requests into a queue and have a cluster of workers handle them
