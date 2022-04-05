@@ -47,10 +47,9 @@ Get the most frequent website - ```GET api/v1/requests/frequent-website```
 
     curl localhost:5000/api/v1/requests/frequent-website
 
-Get all requests in a specified time frame ```GET api/v1/requests/time-frame?from={from-iso}&to={to-iso}
+Get all requests in a specified time frame ```GET api/v1/requests/time-frame?from={from-iso-time}&to={to-iso-time}```
 
-    curl "localhost:5000/api/v1/requests/time-frame?from=2022-04-05T2
-3:00:00&to=2022-04-05T23:24:04
+    curl "localhost:5000/api/v1/requests/time-frame?from=2022-04-05T23:00:00&to=2022-04-05T23:24:04"
     
 
 ## Further Improvement
