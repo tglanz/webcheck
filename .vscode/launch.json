@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Backend",
+            "type": "python",
+            "request": "launch",
+            "program": "backend/server.py",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Example: Simple",
+            "type": "python",
+            "request": "launch",
+            "program": "examples/simple.py",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "Example: Google",
+            "type": "python",
+            "request": "launch",
+            "program": "examples/app.py",
+            "args": [
+                "--url", "http://www.google.com"
+            ],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ],
+    "compounds": []
+}
